@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Single UncleHome",
+        "link": "single-product.html"
+    },
+    {
+        "name": "Single Product Sale",
+        "link": "single-product-sale.html"
+    },
+    {
+        "name": "Single Product Group",
+        "link": "single-product-group.html"
+    },
+    {
+        "name": "Single Product Normal",
+        "link": "single-product-normal.html"
+    },
+    {
+        "name": "Single Product Affiliate",
+        "link": "single-product-affiliate.html"
+    }
+]
