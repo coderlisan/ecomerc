@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 
 import HomeList from '../../data/home_list.json';
 import Shop_list from '../../data/Shop_list.json';
