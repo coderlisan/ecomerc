@@ -1,22 +1,27 @@
 [
     {
         "name": "Single UncleHome",
-        "link": "single-product.html"
+        "link": "single-product.html",
+        "id" : 1
     },
     {
         "name": "Single Product Sale",
-        "link": "single-product-sale.html"
+        "link": "single-product-sale.html",
+        "id" : 2
     },
     {
         "name": "Single Product Group",
-        "link": "single-product-group.html"
+        "link": "single-product-group.html",
+        "id" : 3
     },
     {
         "name": "Single Product Normal",
-        "link": "single-product-normal.html"
+        "link": "single-product-normal.html",
+        "id" : 4
     },
     {
         "name": "Single Product Affiliate",
-        "link": "single-product-affiliate.html"
+        "link": "single-product-affiliate.html",
+        "id" : 5
     }
 ]

@@ -73,8 +73,8 @@ const ContentWrap = () => {
                                     <div className="product-variants">
                                         <div className="produt-variants-size">
                                             <label>Dimension</label>
-                                            <select className="nice-select">
-                                                <option value="1" title="S" selected="selected">40x60cm</option>
+                                            <select defaultValue={'1'} className="nice-select">
+                                                <option value="1" title="S">40x60cm</option>
                                                 <option value="2" title="M">60x90cm</option>
                                                 <option value="3" title="L">80x120cm</option>
                                             </select>
@@ -85,7 +85,7 @@ const ContentWrap = () => {
                                             <div className="quantity">
                                                 <label>Quantity</label>
                                                 <div className="cart-plus-minus">
-                                                    <input className="cart-plus-minus-box" value="1" type="text" />
+                                                    <input className="cart-plus-minus-box" defaultValue={'1'} type="text" />
                                                     <div className="dec qtybutton"><i className="fa fa-angle-down"></i></div>
                                                     <div className="inc qtybutton"><i className="fa fa-angle-up"></i></div>
                                                 </div>

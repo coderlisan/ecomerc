@@ -81,7 +81,7 @@ const SingleProdArea = () => {
                                                                             <p className="your-opinion">
                                                                                 <label>Your Rating</label>
                                                                                 <span>
-                                                                                    <select className="star-rating">
+                                                                                    <select defaultValue={'1'} className="star-rating">
                                                                                       <option value="1">1</option>
                                                                                       <option value="2">2</option>
                                                                                       <option value="3">3</option>
@@ -91,19 +91,19 @@ const SingleProdArea = () => {
                                                                                 </span>
                                                                             </p>
                                                                             <p className="feedback-form">
-                                                                                <label for="feedback">Your Review</label>
+                                                                                <label htmlFor="feedback">Your Review</label>
                                                                                 <textarea id="feedback" name="comment" cols="45" rows="8" aria-required="true"></textarea>
                                                                             </p>
                                                                             <div className="feedback-input">
                                                                                 <p className="feedback-form-author">
-                                                                                    <label for="author">Name<span className="required">*</span>
+                                                                                    <label htmlFor="author">Name<span className="required">*</span>
                                                                                     </label>
-                                                                                    <input id="author" name="author" value="" size="30" aria-required="true" type="text"/>
+                                                                                    <input id="author" name="author" defaultValue={''} size="30" aria-required="true" type="text"/>
                                                                                 </p>
                                                                                 <p className="feedback-form-author feedback-form-email">
-                                                                                    <label for="email">Email<span className="required">*</span>
+                                                                                    <label htmlFor="email">Email<span className="required">*</span>
                                                                                     </label>
-                                                                                    <input id="email" name="email" value="" size="30" aria-required="true" type="text"/>
+                                                                                    <input id="email" name="email" defaultValue={''} size="30" aria-required="true" type="text"/>
                                                                                     <span className="required"><sub>*</sub> Required fields</span>
                                                                                 </p>
                                                                                 <div className="feedback-btn pb-15">

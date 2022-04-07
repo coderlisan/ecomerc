@@ -8,7 +8,7 @@ const Breadcrumb = () => {
                     <div className="breadcrumb-content">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li className="active">Single Product Tab Style Top</li>
+                            <li className="active">Dynamic Page</li>
                         </ul>
                     </div>
                 </div>

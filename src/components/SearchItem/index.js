@@ -76,7 +76,7 @@ const SearchItem = () => {
                                         <option value="15">Smartwatch</option>                           
                                         <option value="16">Accessories</option>
                                     </select>
-                                    <input type="text" placeholder="Enter your search key ..." />
+                                    <input type="text" placeholder="Enter your search key ..." defaultValue={''} />
                                     <button className="li-btn" type="submit"><i className="fa fa-search"></i></button>
                                 </form>
         </React.Fragment>

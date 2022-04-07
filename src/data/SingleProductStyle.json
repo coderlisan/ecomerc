@@ -1,26 +1,27 @@
 [
     {
         "name": "Single Product UncleHome",
-        "link": "single-product-carousel.html"
+        "link": "single-product-carousel.html",
+        "id" : 1
     },
     {
         "name": "Single Product Gallery Left",
-        "link": "single-product-gallery-left.html"
+        "link": "single-product-gallery-left.html",
+        "id" : 2
     },
     {
         "name": "Single Product Gallery Right",
-        "link": "single-product-gallery-right.html"
+        "link": "single-product-gallery-right.html",
+        "id" : 3
     },
     {
         "name": "Single Product Tab Style Top",
-        "link": "single-product-tab-style-top.html"
+        "link": "single-product-tab-style-top.html",
+        "id" : 4
     },
     {
         "name": "Single Product Tab Style Left",
-        "link": "single-product-tab-style-left.html"
-    },
-    {
-        "name": "Single Product Tab Style Right",
-        "link": "single-product-tab-style-right.html"
+        "link": "single-product-tab-style-left.html",
+        "id" : 5
     }
 ]

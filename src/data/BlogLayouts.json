@@ -1,33 +1,27 @@
 [
     {
-        "name": "Home UncleHome",
+        "name": "Blog Layouts 1",
         "link": "index.html",
-        "active" : true,
         "id" : 1
     },
     {
-        "name": "Home Two",
+        "name": "Blog Layouts 2",
         "link": "index-2.html",
-        "active" : false,
         "id" : 2
     },
     {
-        "name": "Home Three",
+        "name": "Blog Layouts 3",
         "link": "index-3.html",
-        "active" : false,
         "id" : 3
-    },  
+    },
     {
-        "name": "Home Four",
+        "name": "Blog Layouts 4",
         "link": "index-4.html",
-        "active" : false,
         "id" : 4
     },
     {
-        "name": "Home Five",
+        "name": "Blog Layouts 5",
         "link": "index-5.html",
-        "active" : false,
         "id" : 5
     }
-
 ]
