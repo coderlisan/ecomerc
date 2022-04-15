@@ -1,5 +1,8 @@
 import React from 'react';
 
+import CartLists from '../../data/CartLists.json';
+
+
 const ShoppingCart = () => {
     return (
         <React.Fragment>
@@ -21,43 +24,26 @@ const ShoppingCart = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+
+                                        { CartLists ? CartLists.map(item => {
+                                            return (
+                                            <tr key={item.id}>
                                                 <td className="li-product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
-                                                <td className="li-product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="images/product/small-size/5.jpg" alt="Li's Product" />
-                                                    </a>
-                                                    </td>
-                                                <td className="li-product-name"><a href="#">Accusantium dolorem1</a></td>
-                                                <td className="li-product-price"><span className="amount">$46.80</span></td>
+                                                <td className="li-product-thumbnail"><a href="#"><img src={item.image_url} alt={item.title} /></a></td>
+                                                <td className="li-product-name"><a href="#">{item.title}</a></td>
+                                                <td className="li-product-price"><span className="amount">${item.price}</span></td>
                                                 <td className="quantity">
                                                     <label>Quantity</label>
                                                     <div className="cart-plus-minus">
-                                                        <input className="cart-plus-minus-box" value="1" type="text" />
+                                                        <input className="cart-plus-minus-box" defaultValue={item.quantity} type="text" />
                                                         <div className="dec qtybutton"><i className="fa fa-angle-down"></i></div>
                                                         <div className="inc qtybutton"><i className="fa fa-angle-up"></i></div>
                                                     </div>
                                                 </td>
-                                                <td className="product-subtotal"><span className="amount">$70.00</span></td>
+                                                <td className="product-subtotal"><span className="amount">${item.total}</span></td>
                                             </tr>
-                                            <tr>
-                                                <td className="li-product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
-                                                <td className="li-product-thumbnail">
-                                                    <a href="#">
-                                                        <img src="images/product/small-size/6.jpg" alt="Li's Product" />
-                                                    </a></td>
-                                                <td className="li-product-name"><a href="#">Mug Today is a good day</a></td>
-                                                <td className="li-product-price"><span className="amount">$71.80</span></td>
-                                                <td className="quantity">
-                                                    <label>Quantity</label>
-                                                    <div className="cart-plus-minus">
-                                                        <input className="cart-plus-minus-box" value="1" type="text" />
-                                                        <div className="dec qtybutton"><i className="fa fa-angle-down"></i></div>
-                                                        <div className="inc qtybutton"><i className="fa fa-angle-up"></i></div>
-                                                    </div>
-                                                </td>
-                                                <td className="product-subtotal"><span className="amount">$60.50</span></td>
-                                            </tr>
+                                            )
+                                        }) : '' }
                                         </tbody>
                                     </table>
                                 </div>

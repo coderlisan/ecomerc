@@ -1,5 +1,7 @@
 import React from 'react';
 
+import WishList from '../../data/WishList.json';
+
 const WishlistPage = () => {
     return (
         <React.Fragment>
@@ -21,30 +23,18 @@ const WishlistPage = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                        { WishList ? WishList.map(item => {
+                                            return (
+                                            <tr key={item.id}>
                                                 <td className="li-product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
-                                                <td className="li-product-thumbnail"><a href="#"><img src="images/wishlist-thumb/1.jpg" alt="" /></a></td>
-                                                <td className="li-product-name"><a href="#">Giro Civilia</a></td>
-                                                <td className="li-product-price"><span className="amount">$23.39</span></td>
-                                                <td className="li-product-stock-status"><span className="in-stock">in stock</span></td>
+                                                <td className="li-product-thumbnail"><a href="#"><img src={item.image_url} alt={item.title} /></a></td>
+                                                <td className="li-product-name"><a href="#">{item.title}</a></td>
+                                                <td className="li-product-price"><span className="amount">${item.price}</span></td>
+                                                <td className="li-product-stock-status"><span className="in-stock">{item.available ? "In Stock" : "Out of Stock"}</span></td>
                                                 <td className="li-product-add-cart"><a href="#">add to cart</a></td>
                                             </tr>
-                                            <tr>
-                                                <td className="li-product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
-                                                <td className="li-product-thumbnail"><a href="#"><img src="images/wishlist-thumb/2.jpg" alt="" /></a></td>
-                                                <td className="li-product-name"><a href="#">Pro Bike Shoes</a></td>
-                                                <td className="li-product-price"><span className="amount">$30.50</span></td>
-                                                <td className="li-product-stock-status"><span className="in-stock">in stock</span></td>
-                                                <td className="li-product-add-cart"><a href="#">add to cart</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td className="li-product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
-                                                <td className="li-product-thumbnail"><a href="#"><img src="images/wishlist-thumb/3.jpg" alt="" /></a></td>
-                                                <td className="li-product-name"><a href="#">Nero Urban Shoes</a></td>
-                                                <td className="li-product-price"><span className="amount">$40.19</span></td>
-                                                <td className="li-product-stock-status"><span className="out-stock">out stock</span></td>
-                                                <td className="li-product-add-cart"><a href="#">add to cart</a></td>
-                                            </tr>
+                                            )
+                                        }) : '' }
                                         </tbody>
                                     </table>
                                 </div>
