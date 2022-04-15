@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Giro Civilia",
+        "price": "23.39",
+        "available": true,
+        "image_url" : "images/wishlist-thumb/1.jpg",
+        "id" : 1
+    },
+        {
+        "title": "Giro Civilia",
+        "price": "23.39",
+        "available": false,
+        "image_url" : "images/wishlist-thumb/2.jpg",
+        "id" : 2
+    },
+        {
+        "title": "Giro Civilia",
+        "price": "23.39",
+        "available": true,
+        "image_url" : "images/wishlist-thumb/3.jpg",
+        "id" : 3
+    }
+]
