@@ -1,0 +1,20 @@
+[
+    {
+        "category": "React Development",
+        "title": "T-shirt for React Developer",
+        "description": "Beach Camera Exclusive Bundle - Includes Two Samsung Radiant 360 R3 Wi-Fi Bluetooth Speakers. Fill The Entire Room With Exquisite Sound.",
+        "price": "46.80",
+        "sticker": true,
+        "image_url" : "images/product/large-size/12.jpg",
+        "id" : 1
+    },
+    {
+        "category": "Graphic Corner",
+        "title": "T-shirt for Graphics Designer",
+        "description": "It's an amazing t-shirt - Includes Two Samsung Radiant 360 R3 Wi-Fi Bluetooth Speakers. Fill The Entire Room With Exquisite Melody tune.",
+        "price": "56.40",
+        "sticker": false,
+        "image_url" : "images/product/large-size/10.jpg",
+        "id" : 2
+    }
+]
