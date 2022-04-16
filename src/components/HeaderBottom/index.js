@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import homeList from '../../data/home_list.json';
 import shopList from '../../data/Shop_list.json';
@@ -20,15 +21,17 @@ const HeaderBottom = () => {
                                 <div className="hb-menu">
                                     <nav>
                                         <ul>
-                                            <li className="dropdown-holder"><a href="#index.html">Home</a>
+                                            <li className="dropdown-holder">
+                                                {/* <a href="#index.html">Home</a> */}                                        
+                                                    <Link to="/">Home</Link>
                                                 <ul className="hb-dropdown">
                                                     { homeList ? homeList.map((item) => item.active ? <li key={item.id} className='active'><a href="{item.link}">{item.name}</a></li> : <li key={item.id}><a href="{item.link}">{item.name}</a></li>) : '' }                                                   
                                                 </ul>
                                             </li>
                                             <li className="megamenu-holder"><a href="shop-left-sidebar.html">Shop</a>
                                                 <ul className="megamenu hb-megamenu">
-                                                    <li>
-                                                        <a href="#shop-left-sidebar.html">Shop Page Layout</a>
+                                                    <li>                                                                                                               
+                                                        <Link to="/shop">Shop Page</Link>                                                        
                                                         <ul>{ shopList ? shopList.map(item => <li key={item.id}><a href="{item.link}">{item.name}</a></li>) : '' }</ul>
                                                     </li>
                                                     <li>

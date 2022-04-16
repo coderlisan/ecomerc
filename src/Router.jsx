@@ -14,7 +14,7 @@ const Router = () => {
   return (
         <Routes>
 
-          <Route path='/' element={ <Home/> } />
+          <Route exact path='/' element={ <Home/> } />
           <Route path='/single-product' element = { <SingleProduct/>} />
           <Route path='/checkout' element = { <Checkout/>} />
           <Route path='/shopping-cart' element = { <ShoppingCart/>} />

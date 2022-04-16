@@ -1,0 +1,22 @@
+[
+  {
+    "name": "S",
+    "quantity": "5",
+    "id" : 1
+  },
+  {
+      "name": "M",
+      "quantity": "9",
+      "id" : 2
+  },
+  {
+      "name": "L",
+      "quantity": "6",
+      "id" : 3
+  },
+  {
+      "name": "XL",
+      "quantity": "7",
+      "id" : 4
+  }
+]
