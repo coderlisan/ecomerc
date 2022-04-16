@@ -1,5 +1,12 @@
 import React from 'react';
-import Products from '../../data/Products.json'
+import {Link} from 'react-router-dom';
+
+import Products from '../../data/Products.json';
+import Brand from '../../data/Brand.json';
+import Categories from '../../data/Categories.json';
+import Color from '../../data/Color.json';
+import Dimension from '../../data/Dimension.json';
+import Size from '../../data/Size.json';
 
 const ShopPage = () => {
   return (
@@ -47,434 +54,7 @@ const ShopPage = () => {
                                         <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
                                             <div className="single-product-wrap">
                                                 <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/1.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/2.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/3.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/4.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/5.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/6.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/7.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/8.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html"><img src="images/product/large-size/9.jpg" alt="Li's Product"/></a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html"><img src="images/product/large-size/10.jpg" alt="Li's Product"/></a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/11.jpg" alt="Li's Product"/>
-                                                    </a>
-                                                    <span className="sticker">New</span>
-                                                </div>
-                                                <div className="product_desc">
-                                                    <div className="product_desc_info">
-                                                        <div className="product-review">
-                                                            <h5 className="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div className="rating-box">
-                                                                <ul className="rating">
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                    <li className="no-star"><i className="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <h4><a className="product_name" href="single-product.html">Accusantium dolorem1</a></h4>
-                                                        <div className="price-box">
-                                                            <span className="new-price">$46.80</span>
-                                                        </div>
-                                                    </div>
-                                                    <div className="add-actions">
-                                                        <ul className="add-actions-link">
-                                                            <li className="add-cart active"><a href="shopping-cart.html">Add to cart</a></li>
-                                                            <li><a href="#" title="quick view" className="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i className="fa fa-eye"></i></a></li>
-                                                            <li><a className="links-details" href="wishlist.html"><i className="fa fa-heart-o"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-4 col-md-4 col-sm-6 mt-40">
-                                            <div className="single-product-wrap">
-                                                <div className="product-image">
-                                                    <a href="single-product.html">
-                                                        <img src="images/product/large-size/12.jpg" alt="Li's Product"/>
-                                                    </a>
+                                                    <a href="single-product.html"><img src="images/product/large-size/1.jpg" alt="Li's Product"/></a>
                                                     <span className="sticker">New</span>
                                                 </div>
                                                 <div className="product_desc">
@@ -521,9 +101,10 @@ const ShopPage = () => {
                                                 <React.Fragment>
                                                     <div key={item.id} className="col-lg-3 col-md-5">
                                                 <div className="product-image">
-                                                    <a href="single-product.html">
+                                                    <Link to="/single-product">
                                                         <img src={item.image_url} alt={item.title}/>
-                                                    </a>
+                                                    </Link>
+                                                    {/* <a href="single-product.html"></a> */}
                                                     <span className="sticker">{item.sticker ? 'New' : 'Old'}</span>
                                                 </div>
                                             </div>
@@ -531,7 +112,9 @@ const ShopPage = () => {
                                                 <div className="product_desc">
                                                     <div className="product_desc_info">
                                                         <div className="product-review">
-                                                            <h5 className="manufacturer"><a href="product-details.html">{item.category}</a></h5>
+                                                            <h5 className="manufacturer">
+                                                                <a href="product-details.html">{item.category}</a>
+                                                            </h5>
                                                             <div className="rating-box">
                                                                 <ul className="rating">
                                                                     <li><i className="fa fa-star-o"></i></li>
@@ -589,12 +172,10 @@ const ShopPage = () => {
                 </div>
                 <div className="col-lg-3 order-2 order-lg-1">
                     <div className="sidebar-categores-box mt-sm-30 mt-xs-30">
-                        <div className="sidebar-title">
-                            <h2>Laptop</h2>
-                        </div>
+                        <div className="sidebar-title"><h2>Laptop</h2></div>
                         <div className="category-sub-menu">
                             <ul>
-                                <li className="has-sub"><a href="# ">Prime Video</a>
+                                <li className="has-sub"><a href="#">Prime Video</a>
                                     <ul>
                                         <li><a href="#">All Videos</a></li>
                                         <li><a href="#">Blouses</a></li>
@@ -629,18 +210,16 @@ const ShopPage = () => {
                         </div>
                     </div>
                     <div className="sidebar-categores-box">
-                        <div className="sidebar-title">
-                            <h2>Filter By</h2>
-                        </div>
+                        <div className="sidebar-title"><h2>Filter By</h2></div>
                         <button className="btn-clear-all mb-sm-30 mb-xs-30">Clear all</button>
                         <div className="filter-sub-area">
                             <h5 className="filter-sub-titel">Brand</h5>
                             <div className="categori-checkbox">
                                 <form action="#">
                                     <ul>
-                                        <li><input type="checkbox" name="product-categori" /><a href="#">Prime Video (13)</a></li>
-                                        <li><input type="checkbox" name="product-categori" /><a href="#">Computers (12)</a></li>
-                                        <li><input type="checkbox" name="product-categori" /><a href="#">Electronics (11)</a></li>
+                                        { Brand ? Brand.map(item => {
+                                        (<li key={item.id}><input type="checkbox" name="product-categori"/><a href="#">{item.name} ({item.quantity})</a></li>)
+                                        }) : '' }
                                     </ul>
                                 </form>
                             </div>
@@ -650,8 +229,7 @@ const ShopPage = () => {
                             <div className="categori-checkbox">
                                 <form action="#">
                                     <ul>
-                                        <li><input type="checkbox" name="product-categori"/><a href="#">Graphic Corner (10)</a></li>
-                                        <li><input type="checkbox" name="product-categori"/><a href="#"> Studio Design (6)</a></li>
+                                        { Categories ? Categories.map(item => (<li key={item.id}><input type="checkbox" name="product-categori"/><a href="#">{item.name} ({item.quantity})</a></li>)) : "" }
                                     </ul>
                                 </form>
                             </div>
@@ -661,10 +239,7 @@ const ShopPage = () => {
                             <div className="size-checkbox">
                                 <form action="#">
                                     <ul>
-                                        <li><input type="checkbox" name="product-size"/><a href="#">S (3)</a></li>
-                                        <li><input type="checkbox" name="product-size"/><a href="#">M (3)</a></li>
-                                        <li><input type="checkbox" name="product-size"/><a href="#">L (3)</a></li>
-                                        <li><input type="checkbox" name="product-size"/><a href="#">XL (3)</a></li>
+                                    { Size ? Size.map(item => (<li key={item.id}><input type="checkbox" name="product-size"/><a href="#">{item.name} ({item.quantity})</a></li>)) : "" }
                                     </ul>
                                 </form>
                             </div>
@@ -674,10 +249,7 @@ const ShopPage = () => {
                             <div className="color-categoriy">
                                 <form action="#">
                                     <ul>
-                                        <li><span className="white"></span><a href="#">White (1)</a></li>
-                                        <li><span className="black"></span><a href="#">Black (1)</a></li>
-                                        <li><span className="Orange"></span><a href="#">Orange (3) </a></li>
-                                        <li><span className="Blue"></span><a href="#">Blue  (2) </a></li>
+                                    { Color ? Color.map(item =>(<li key={item.id}><span className="white"></span><a href="#">{item.name} ({item.quantity})</a></li>)) : "" }
                                     </ul>
                                 </form>
                             </div>
@@ -687,28 +259,11 @@ const ShopPage = () => {
                             <div className="categori-checkbox">
                                 <form action="#">
                                     <ul>
-                                        <li><input type="checkbox" name="product-categori"/><a href="#">40x60cm (6)</a></li>
-                                        <li><input type="checkbox" name="product-categori"/><a href="#">60x90cm (6)</a></li>
-                                        <li><input type="checkbox" name="product-categori"/><a href="#">80x120cm (6)</a></li>
+                                    { Dimension ? Dimension.map(item => <li key={item.id}><input type="checkbox" name="product-categori"/><a href="#">{item.name} ({item.quantity})</a></li>) : "" }
                                     </ul>
                                 </form>
                             </div>
                          </div>
-                    </div>
-                    <div className="sidebar-categores-box mb-sm-0">
-                        <div className="sidebar-title">
-                            <h2>Laptop</h2>
-                        </div>
-                        <div className="category-tags">
-                            <ul>
-                                <li><a href="# ">Devita</a></li>
-                                <li><a href="# ">Cameras</a></li>
-                                <li><a href="# ">Sony</a></li>
-                                <li><a href="# ">Computer</a></li>
-                                <li><a href="# ">Big Sale</a></li>
-                                <li><a href="# ">Accessories</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
