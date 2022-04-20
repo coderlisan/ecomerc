@@ -10,6 +10,10 @@ import ComparePage from './pages/Compare';
 import MyShopPage from './pages/Shop';
 import WishlistPage from './pages/WishlistPage';
 
+import AboutPage from './pages/AboutPage';
+import Blank404 from './pages/Blank404';
+import Contact from './pages/Contact';
+
 const Router = () => {
 	return (
 		<Routes>
@@ -21,7 +25,12 @@ const Router = () => {
 			<Route path="/compare" element={<ComparePage />} />
 			<Route path="/shop" element={<MyShopPage />} />
 			<Route path="/wishlist" element={<WishlistPage />} />
+
+			<Route path="/404" element={<Blank404 />} />
+			<Route path="/about" element={<AboutPage />} />
+			<Route path="/contact" element={<Contact />} />
 		</Routes>
 	);
 };
+
 export default Router;

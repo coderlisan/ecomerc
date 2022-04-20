@@ -151,10 +151,12 @@ const HeaderBottom = () => {
 											</ul>
 										</li>
 										<li>
-											<a href="#about-us.html">About Us</a>
+											{/* <a href="#about-us.html">About Us</a> */}
+											<Link to="/About">About Us</Link>
 										</li>
 										<li>
-											<a href="#contact.html">Contact</a>
+											{/* <a href="#contact.html">Contact</a> */}
+											<Link to="/Contact">Contact</Link>
 										</li>
 									</ul>
 								</nav>
