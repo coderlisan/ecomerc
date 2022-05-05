@@ -9,7 +9,6 @@ import Accounts from './pages/Accounts';
 import ComparePage from './pages/Compare';
 import MyShopPage from './pages/Shop';
 import WishlistPage from './pages/WishlistPage';
-
 import AboutPage from './pages/AboutPage';
 import Blank404 from './pages/Blank404';
 import Contact from './pages/Contact';
@@ -20,12 +19,11 @@ const Router = () => {
 			<Route exact path="/" element={<Home />} />
 			<Route path="/single-product" element={<SingleProduct />} />
 			<Route path="/checkout" element={<Checkout />} />
-			<Route path="/shopping-cart" element={<ShoppingCart />} />
-			<Route path="/my-account" element={<Accounts />} />
+			<Route path="/cart" element={<ShoppingCart />} />
+			<Route path="/account" element={<Accounts />} />
 			<Route path="/compare" element={<ComparePage />} />
 			<Route path="/shop" element={<MyShopPage />} />
 			<Route path="/wishlist" element={<WishlistPage />} />
-
 			<Route path="/404" element={<Blank404 />} />
 			<Route path="/about" element={<AboutPage />} />
 			<Route path="/contact" element={<Contact />} />
