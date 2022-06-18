@@ -2,6 +2,8 @@ import React from 'react';
 import Wishlist from '../../components/Wishlist'
 import Minicart from '../../components/Minicart'
 import SearchItem from '../../components/SearchItem'
+import { Link } from 'react-router-dom';
+
 
 const HeaderMid = () => {
     return (
@@ -11,9 +13,7 @@ const HeaderMid = () => {
                         <div className="row">
                             <div className="col-lg-3">
                                 <div className="logo pb-sm-30 pb-xs-30">
-                                    <a href="index.html">
-                                        <img src="images/menu/logo/1.jpg" alt="" />
-                                    </a>
+                                    <Link to="/cart">CART</Link>
                                 </div>
                             </div>
                             <div className="col-lg-9 pl-0 ml-sm-15 ml-xs-15">

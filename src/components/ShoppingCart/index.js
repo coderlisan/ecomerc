@@ -1,9 +1,18 @@
 import React from 'react';
+import {useState} from "react";
+
 
 import CartLists from '../../data/CartLists.json';
 
-
 const ShoppingCart = () => {
+
+    let [product, setProduct] = useState(CartLists);
+
+    let incrementCounter = () => setProduct(product.map(prod => prod.quantity + 1));
+    let decrementCounter = () => setProduct(product.map(prod => prod.quantity - 1));
+
+    // if(product.forEach(prod => prod.quantity)<=0) decrementCounter = () => setProduct(1);
+
     return (
         <React.Fragment>
             <div className="Shopping-cart-area pt-60 pb-60">
@@ -35,12 +44,12 @@ const ShoppingCart = () => {
                                                 <td className="quantity">
                                                     <label>Quantity</label>
                                                     <div className="cart-plus-minus">
-                                                        <input className="cart-plus-minus-box" defaultValue={item.quantity} type="text" />
-                                                        <div className="dec qtybutton"><i className="fa fa-angle-down"></i></div>
-                                                        <div className="inc qtybutton"><i className="fa fa-angle-up"></i></div>
+                                                        <input className="cart-plus-minus-box" defaultValue={1} type="text"/>
+                                                        <button onClick={decrementCounter} type="button" className="dec qtybutton"><i className="fa fa-angle-down"></i></button>
+                                                        <button onClick={incrementCounter} type="button" className="inc qtybutton"><i className="fa fa-angle-up"></i></button>
                                                     </div>
                                                 </td>
-                                                <td className="product-subtotal"><span className="amount">${item.total}</span></td>
+                                                <td className="product-subtotal"><span className="amount">${item.price*item.quantity}</span></td>
                                             </tr>
                                             )
                                         }) : '' }

@@ -136,3 +136,5 @@
 
 .no-csspointerevents .nice-select.open .list {
   display: block; }
+
+.logo.pb-sm-30.pb-xs-30>a {display: block;font-size: 30px}
