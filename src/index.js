@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
@@ -11,9 +11,12 @@ const MainApp = () => (
  </Router>
 )
 
-ReactDOM.render(
-  <React.StrictMode>
-    <MainApp/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <MainApp/>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<MainApp />);

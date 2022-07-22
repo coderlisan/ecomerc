@@ -1,9 +1,24 @@
-import React from 'react';
-
-import CartLists from '../../data/CartLists.json';
+import React, { useState } from 'react';
+import CartList from '../../data/CartLists.json';
 
 
 const ShoppingCart = () => {
+
+    const [ cartList, setCartList ] = useState(CartList)
+
+
+    const increaseQuantity = () => {
+        let newQuantity = 0
+        cartList.forEach(item => {
+            newQuantity = item.quantity + 1
+        })
+        return newQuantity
+    }
+    
+    const decreaseQuantity = () => {
+
+    }
+
     return (
         <React.Fragment>
             <div className="Shopping-cart-area pt-60 pb-60">
@@ -25,7 +40,7 @@ const ShoppingCart = () => {
                                         </thead>
                                         <tbody>
 
-                                        { CartLists ? CartLists.map(item => {
+                                        { cartList ? cartList.map(item => {
                                             return (
                                             <tr key={item.id}>
                                                 <td className="li-product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
@@ -36,11 +51,11 @@ const ShoppingCart = () => {
                                                     <label>Quantity</label>
                                                     <div className="cart-plus-minus">
                                                         <input className="cart-plus-minus-box" defaultValue={item.quantity} type="text" />
-                                                        <div className="dec qtybutton"><i className="fa fa-angle-down"></i></div>
-                                                        <div className="inc qtybutton"><i className="fa fa-angle-up"></i></div>
+                                                        <div onClick={() => decreaseQuantity(item.id)} className="dec qtybutton"><i className="fa fa-angle-down"></i></div>
+                                                        <div onClick={() => increaseQuantity(item.id)} className="inc qtybutton"><i className="fa fa-angle-up"></i></div>
                                                     </div>
                                                 </td>
-                                                <td className="product-subtotal"><span className="amount">${item.total}</span></td>
+                                                <td className="product-subtotal"><span className="amount">${item.price * item.quantity}</span></td>
                                             </tr>
                                             )
                                         }) : '' }

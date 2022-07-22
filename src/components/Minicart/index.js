@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Minicart = () => {
     return (
@@ -7,7 +8,7 @@ const Minicart = () => {
                 <div className="hm-minicart-trigger">
                     <span className="item-icon"></span>
                     <span className="item-text">£80.00
-                        <span className="cart-item-count">2</span>
+                        <span className="cart-item-count"><Link to="/cart">2</Link></span>
                     </span>
                 </div>
                 <span></span>
