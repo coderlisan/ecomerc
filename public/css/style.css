@@ -5249,7 +5249,7 @@ span.required {
 	margin-right: 10px;
 }
 .sp-carousel-content .cart-plus-minus {
-	float: unset;
+	float: none;
 	display: inline-block;
 }
 .sp-carousel-content .cart-quantity {
@@ -5436,3 +5436,6 @@ a:focus, a:hover{color: #e80f0f !important}
 /*----------------------------------------------------------------------------------------------------*/
 /*------------------------------------------> The End <-----------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
+
+button.dec.qtybutton {border: 0 !important}
+button.inc.qtybutton {border: 0 !important}

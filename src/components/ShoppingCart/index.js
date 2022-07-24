@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CartList from '../../data/CartLists.json';
 
-
+         
 const ShoppingCart = () => {
 
     const [ cartList, setCartList ] = useState(CartList)
