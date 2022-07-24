@@ -2,14 +2,14 @@
     {
         "title": "Accusantium Dolorem1",
         "price": 45,
-        "quantity": 5,
+        "quantity": 1,
         "image_url" : "images/product/small-size/5.jpg",
         "id" : 1
     },
         {
         "title": "Mug Today Is A Good Day",
         "price": 70,
-        "quantity": 8,
+        "quantity": 1,
         "image_url" : "images/product/small-size/6.jpg",
         "id" : 2
     }

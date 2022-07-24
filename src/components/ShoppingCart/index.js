@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
 import CartList from '../../data/CartLists.json';
-
          
 const ShoppingCart = () => {
 
     const [ cartList, setCartList ] = useState(CartList)
 
-
-    const increaseQuantity = () => {
-        let newQuantity = 0
+    const increaseQuantity = (id) => {
         cartList.forEach(item => {
-            newQuantity = item.quantity + 1
+            if(item.id == id){
+                item.quantity += 1
+                setCartList([...cartList])  
+            }
         })
-        return newQuantity
-    }
-    
-    const decreaseQuantity = () => {
+      };
 
-    }
+
+    const decreaseQuantity = (id) => {
+        cartList.forEach(item => {
+            if(item.id == id){
+                if(item.quantity !== 1) item.quantity -= 1
+                setCartList([...cartList])  
+            }
+        })
+      };
+
 
     return (
         <React.Fragment>
@@ -40,7 +46,7 @@ const ShoppingCart = () => {
                                         </thead>
                                         <tbody>
 
-                                        { cartList ? cartList.map(item => {
+                                        { cartList && typeof(cartList) == 'object' ? cartList.map((item, index) => {
                                             return (
                                             <tr key={item.id}>
                                                 <td className="li-product-remove"><a href="#"><i className="fa fa-times"></i></a></td>
@@ -50,7 +56,7 @@ const ShoppingCart = () => {
                                                 <td className="quantity">
                                                     <label>Quantity</label>
                                                     <div className="cart-plus-minus">
-                                                        <input className="cart-plus-minus-box" defaultValue={item.quantity} type="text" />
+                                                        <input className="cart-plus-minus-box" value={item.quantity} onChange={() => console.log()} type="text" />
                                                         <div onClick={() => decreaseQuantity(item.id)} className="dec qtybutton"><i className="fa fa-angle-down"></i></div>
                                                         <div onClick={() => increaseQuantity(item.id)} className="inc qtybutton"><i className="fa fa-angle-up"></i></div>
                                                     </div>
