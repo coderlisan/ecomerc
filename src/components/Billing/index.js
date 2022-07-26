@@ -60,10 +60,7 @@ const Billing = () => {
             </div>
             <div className="different-address">
                 <div className="ship-different-title">
-                    <h3>
-                        <label>Ship to a different address?</label>
-                        <input id="ship-box" type="checkbox" />
-                    </h3>
+                    <h3><label>Ship to a different address?</label><input id="ship-box" type="checkbox"/></h3>
                 </div>
                 <div id="ship-box-info" className="row">
                     <div className="col-md-12">
@@ -80,70 +77,38 @@ const Billing = () => {
                         </div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>First Name <span className="required">*</span></label>
-                            <input placeholder="" type="text" />
-                        </div>
+                        <div className="checkout-form-list"><label>First Name <span className="required">*</span></label><input placeholder="" type="text"/></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>Last Name <span className="required">*</span></label>
-                            <input placeholder="" type="text" />
-                        </div>
+                        <div className="checkout-form-list"><label>Last Name <span className="required">*</span></label><input placeholder="" type="text"/></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>Company Name</label>
-                            <input placeholder="" type="text" />
-                        </div>
+                        <div className="checkout-form-list"><label>Company Name</label><input placeholder="" type="text"/></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>Address <span className="required">*</span></label>
-                            <input placeholder="Street address" type="text" />
-                        </div>
+                        <div className="checkout-form-list"><label>Address <span className="required">*</span></label><input placeholder="Street address" type="text"/></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <input placeholder="Apartment, suite, unit etc. (optional)" type="text" />
-                        </div>
+                        <div className="checkout-form-list"><input placeholder="Apartment, suite, unit etc. (optional)" type="text"/></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>Town / City <span className="required">*</span></label>
-                            <input type="text" />
-                        </div>
+                        <div className="checkout-form-list"><label>Town / City <span className="required">*</span></label><input type="text"/></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>State / County <span className="required">*</span></label>
-                            <input placeholder="" type="text" />
-                        </div>
+                        <div className="checkout-form-list"><label>State / County <span className="required">*</span></label><input placeholder="" type="text"/></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>Postcode / Zip <span className="required">*</span></label>
-                            <input placeholder="" type="text" />
-                        </div>
+                        <div className="checkout-form-list"><label>Postcode / Zip <span className="required">*</span></label><input placeholder="" type="text" /></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>Email Address <span className="required">*</span></label>
-                            <input placeholder="" type="email" />
-                        </div>
+                        <div className="checkout-form-list"><label>Email Address <span className="required">*</span></label><input placeholder="" type="email" /></div>
                     </div>
                     <div className="col-md-12">
-                        <div className="checkout-form-list">
-                            <label>Phone  <span className="required">*</span></label>
-                            <input type="text" />
-                        </div>
+                        <div className="checkout-form-list"><label>Phone  <span className="required">*</span></label><input type="text" /></div>
                     </div>
                 </div>
                 <div className="order-notes">
-                    <div className="checkout-form-list">
-                        <label>Order Notes</label>
-                        <textarea id="checkout-mess" cols="30" rows="10" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                    </div>
+                    <div className="checkout-form-list"><label>Order Notes</label><textarea id="checkout-mess" cols="30" rows="10" placeholder="Notes about your order"></textarea></div>
                 </div>
             </div>
         </div>
