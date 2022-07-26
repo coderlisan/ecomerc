@@ -1,6 +1,6 @@
 import React from "react";
 
-const Details = () => {
+const Billing = () => {
   return (
     <form action="#">
         <div className="checkbox-form">
@@ -150,4 +150,4 @@ const Details = () => {
     </form>
   )
 }
-export default Details
+export default Billing

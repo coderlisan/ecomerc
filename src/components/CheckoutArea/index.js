@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Details from '../Billing';
+import Billing from '../Billing';
 
 const CheckoutArea = () => {
     return (
@@ -34,7 +34,7 @@ const CheckoutArea = () => {
                     </div>
                     <div className="row">
                         <div className="col-lg-6 col-12">
-                            <Details />
+                            <Billing />
                         </div>
                         <div className="col-lg-6 col-12">
                             <div className="your-order">
